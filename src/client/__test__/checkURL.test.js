@@ -1,12 +1,12 @@
 const { isValidUrl } = require("../views/js/checkURL")
 
-describe('urlValidity', ()=> {
+describe('url visibility', ()=> {
     test('test if strings are false urls', () => {
         expect(isValidUrl("read")).toBeFalsy();
     })
     
     test('emails are not considered valid urls', () => {
-        expect(isValidUrl("mailto:ahmed@gmail.com")).toBeFalsy();
+        expect(isValidUrl("mailto:penitent85@gmail.com")).toBeFalsy();
     })
     
     test('expect urls to be true', () => {
