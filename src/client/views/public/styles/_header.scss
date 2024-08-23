@@ -1,0 +1,27 @@
+// header.scss
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-color: $primary-color;
+  padding: 12px 20px;
+  color: #fff;
+  text-align: center;
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  p{
+    font-size: 20px;
+    
+  }
+
+}

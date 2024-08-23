@@ -1,0 +1,14 @@
+#results{
+    padding: 30px;
+    width: 70%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #fefefed4;
+    &:hover { 
+        color: white;
+    }
+
+}

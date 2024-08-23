@@ -1,0 +1,48 @@
+// form.scss
+
+form {
+  background-color: black;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  @include box-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: gray;
+    transition: all 0.5s;
+    &:hover {
+      color: white;
+    }
+  }
+  input[type='text'] {
+    background-color: rgb(67, 67, 67);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    @include box-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+    &:focus {
+      outline: none;
+      @include box-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+    }
+  }
+  button[type='submit'] {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary-color;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+}
